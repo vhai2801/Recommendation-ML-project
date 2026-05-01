@@ -1,0 +1,4 @@
+Model,RMSE,MAE,Precision@5,Recall@5,Precision@10,Recall@10,Time (s)
+Global Average (Baseline),1.0821,0.8351,0.2656,0.9704,0.1468,0.9891,0.0001
+Item-based (KNN),1.0091,0.7572,0.8527,0.9193,0.8516,0.9319,135.4675
+Trust Network (user-based),1.0896,0.8389,0.8242,0.969,0.8233,0.9869,0.1367
