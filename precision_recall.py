@@ -64,8 +64,8 @@ def precision_recall_at_k_3(test_df, predictions, k, threshold=3.5):
         group_sorted = group.sort_values('pred', ascending=False)
         top_k = group_sorted.head(k)
 
-        n_rel           = sum(group['rating'] >= threshold)
-        n_rec_k         = sum(top_k['pred']   >= threshold)
+        n_rel = sum(group['rating'] >= threshold)
+        n_rec_k = sum(top_k['pred']   >= threshold)
         n_rel_and_rec_k = sum((top_k['pred'] >= threshold) & (top_k['rating'] >= threshold))
 
         if n_rec_k > 0:
